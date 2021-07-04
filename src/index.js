@@ -195,15 +195,15 @@ const initialUserData = {
   name:"재호",
   cash: 100000000,
   stock: [
-    {
-      id:1,
-      name:"삼성후자",
-      price:80000,
-      quantity:1,
-      averagePrice(){
-        return (this.price/this.quantity)
-      }
-    }
+    // {
+    //   id:1,
+    //   name:"삼성후자",
+    //   price:80000,
+    //   quantity:1,
+    //   averagePrice(){
+    //     return (this.price/this.quantity)
+    //   }
+    // }
   ]
 }
 

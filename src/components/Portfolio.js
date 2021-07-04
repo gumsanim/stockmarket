@@ -71,11 +71,11 @@ function Portfolio(props){
                 {/* <div>보유자산(현금+주식): {cash+totalAsset}</div> */}
                 <div 
                     className={totalReturn>0?"isPlus":totalReturn<0?"isMinus":"isZero"}
-                    >손익금액: {totalReturn}원
+                    >손익금액: {isNaN(totalReturn)?0:totalReturn}원
                 </div>
                 <div 
                     className={totalReturnRate>0?"isPlus":totalReturnRate<0?"isMinus":"isZero"}
-                    >손익률: {totalReturnRate}%
+                    >손익률: {isNaN(totalReturnRate)?0:totalReturnRate}%
                 </div>
             </div>
             <div className="myasset-illustration">

@@ -45,8 +45,8 @@ function DetailModal(props){
             <div className="detailModal">
                 <div><h1>{props.name} 상세표</h1></div>
                 <div>수량:{number}개</div>
-                <div>수익:{profit}원</div>
-                <div>수익률:{profitRate}%</div>
+                <div className={profit>0?"isPlus":profit<0?"isMinus":"isZero"}>수익:{isNaN(profit)?0:profit}원</div>
+                <div className={profitRate>0?"isPlus":profitRate<0?"isMinus":"isZero"}>수익률:{isNaN(profitRate)?0:profitRate}%</div>
                 <div>
                     <button 
                         onClick={()=>{props.setIsDetailShow(!props.isDetailShow)}}
