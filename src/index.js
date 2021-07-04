@@ -200,8 +200,8 @@ const initialUserData = {
       name:"삼성후자",
       price:80000,
       quantity:1,
-      totalPrice(){
-        return this.price*this.quantity
+      averagePrice(){
+        return (this.price/this.quantity)
       }
     }
   ]
@@ -223,8 +223,8 @@ function userReducer(state=initialUserData, action){
         name:action.payload.name,
         quantity: 1,
         price: action.payload.price,
-        totalPrice(){
-          return this.price*this.quantity
+        averagePrice(){
+          return (this.price/this.quantity)
         }
       })
     }
