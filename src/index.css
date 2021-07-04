@@ -46,7 +46,7 @@ li{
   border:1px solid black;
 }
 .myasset{
-  padding:50px;
+  margin-top:30px;
   text-align: center;
 }
 
@@ -56,6 +56,8 @@ li{
   align-items: center;
   flex-direction:column;
   font-weight:bold;
+  padding:50px;
+  font-size:18px;
 }
 
 .myasset-status .possessedStock{
@@ -124,10 +126,10 @@ li{
 
 .table-container td{
   width:300px;
-  padding:20px;
   text-align: center;
   border: 1px solid black;
   font-weight: bold;
+  font-size:20px;
 }
 
 .table-container td ul{
