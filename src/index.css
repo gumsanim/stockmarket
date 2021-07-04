@@ -11,3 +11,271 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1,h2,h3,h4,h5,h6{
+  margin:0;
+}
+
+ul,li{
+  margin:0;
+  padding:0;
+}
+
+li{
+  list-style: none;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/*Title*/
+.title-container{
+  text-align: center;
+  margin:30px;
+}
+
+/*Stock*/
+.table-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-container table{
+  border:1px solid black;
+}
+.myasset{
+  padding:50px;
+  text-align: center;
+}
+
+.myasset-status{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+  font-weight:bold;
+}
+
+.myasset-status .possessedStock{
+  display:flex;
+}
+
+.myasset-status .possessedStock div:first-child{
+  background:none;
+  color:black;
+}
+
+.myasset-status .possessedStock div{
+  background: black;
+  color:white;
+  margin-left:3px;
+  margin-right:3px;
+  padding:3px;
+  border-radius: 10px;
+}
+
+.myasset-illustration{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.myasset-illustration div{
+  width:400px;
+  height:300px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  border:1px solid black;
+  margin:10px;
+}
+
+/*TableHead*/
+
+.table-container thead{
+  background-color: beige;
+  font-weight: bold;
+  font-size:20px;
+}
+
+/*CompanyList*/
+.table-container tbody{
+
+}
+
+.table-container tr{
+  border:1px solid black;
+}
+
+.isZero{
+  color:black;
+}
+
+.isPlus{
+  color:crimson;
+}
+
+.isMinus{
+  color:slateblue;
+}
+
+.table-container td{
+  width:300px;
+  padding:20px;
+  text-align: center;
+  border: 1px solid black;
+  font-weight: bold;
+}
+
+.table-container td ul{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.table-container td button{
+  border:none;
+  padding:10px;
+  margin:3px;
+  font-size:16px;
+  border-radius:10px;
+}
+
+
+/*BuyModal*/
+
+.buyBackground{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background: rgba(0,0,0,.1);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buyModal{
+  width:500px;
+  height:500px;
+  background: white;
+  border-radius:20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size:20px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+}
+
+.buyModal div{
+  margin:10px;
+}
+
+.buyModal input{
+  width:200px;
+  height:30px;
+  font-size:20px;
+}
+
+.buyModal button{
+  border:none;
+  padding:10px;
+  font-size:20px;
+  border-radius:10px;
+  margin:5px;
+}
+
+/*SellModal*/
+
+.sellBackground{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background: rgba(0,0,0,.1);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sellModal{
+  width:500px;
+  height:500px;
+  background: white;
+  border-radius:20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size:20px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+}
+
+.sellModal div{
+  margin:10px;
+}
+
+.sellModal input{
+  width:200px;
+  height:30px;
+  font-size:20px;
+}
+
+.sellModal button{
+  border:none;
+  padding:10px;
+  font-size:20px;
+  border-radius:10px;
+  margin:5px;
+}
+
+/*DetailModal*/
+
+.detailBackground{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100vw;
+  height:100vh;
+  background: rgba(0,0,0,.1);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailModal{
+  width:500px;
+  height:500px;
+  background: white;
+  border-radius:20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size:20px;
+  box-shadow: 5px 5px 5px rgba(0,0,0,.2);
+}
+
+.detailModal div{
+  margin:10px;
+}
+
+.detailModal input{
+  width:200px;
+  height:30px;
+  font-size:20px;
+}
+
+.detailModal button{
+  border:none;
+  padding:10px;
+  font-size:20px;
+  border-radius:10px;
+  margin:5px;
+}
