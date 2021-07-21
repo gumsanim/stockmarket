@@ -30,12 +30,14 @@ li{
 }
 
 /*Title*/
+
 .title-container{
   text-align: center;
   margin:30px;
 }
 
 /*Stock*/
+
 .table-container{
   display:flex;
   justify-content: center;
@@ -104,6 +106,7 @@ li{
 }
 
 /*CompanyList*/
+
 .table-container tbody{
 
 }
@@ -145,7 +148,6 @@ li{
   font-size:16px;
   border-radius:10px;
 }
-
 
 /*BuyModal*/
 

@@ -3,7 +3,7 @@ import {useState} from "react";
 
 function BuyModal(props){
 
-    const [price,setprice]= useState(props.price)
+    const [price]= useState(props.price)
 
     function onBuy(){
         props.dispatch({type:"buy",payload:{
@@ -23,7 +23,8 @@ function BuyModal(props){
                 <div>
                     <button onClick={
                         onBuy
-                    }>확인</button>
+                    }>확인
+                    </button>
                 </div>
             </div>
         </div>

@@ -1,9 +1,7 @@
 import { useState } from "react";
-import { connect } from "react-redux"
 import BuyModal from "./BuyModal"
 import SellModal from "./SellModal";
 import DetailModal from "./DetailModal";
-
 
 function CompanyList({companyData}){
 

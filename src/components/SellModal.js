@@ -3,7 +3,7 @@ import {useState} from "react";
 
 function SellModal(props){
 
-    const [price,setPrice] = useState(props.price);
+    const [price] = useState(props.price);
 
     function onSell(){
 
@@ -24,7 +24,6 @@ function SellModal(props){
         props.setIsSellShow(!props.isSellShow);   
     }
     
-
     return (
         <div className="sellBackground">
             <div className="sellModal">
@@ -34,7 +33,8 @@ function SellModal(props){
                 <div>
                     <button onClick={
                       onSell
-                    }>확인</button>
+                    }>확인
+                    </button>
                 </div>
             </div>
         </div>

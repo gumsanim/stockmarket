@@ -1,15 +1,14 @@
-import {useState,useEffect} from "react";
-import { connect } from "react-redux";
+import {useEffect} from "react";
+import {connect} from "react-redux";
 import CompanyList from "./CompanyList";
 import TableHead from "./TableHead";
-import {Bar, Doughnut, Line} from "react-chartjs-2";
 
 function Stock(props){
 
     useEffect(()=>{
         let priceChanger = setInterval(()=>{
             let upOrDown = [];
-            props.companyData.forEach((elem,idx)=>{
+            props.companyData.forEach(()=>{
                 upOrDown.push(Math.floor(Math.random()*2));
             })
             props.dispatch({type:"fluctuation",payload:upOrDown});
@@ -49,6 +48,5 @@ function stateIntoProps(state){
         companyData: state.companyReducer
     }
 }
-
 
 export default connect(stateIntoProps)(Stock)
